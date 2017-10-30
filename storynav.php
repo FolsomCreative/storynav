@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'STORY_NAV_VERSION', '1.0.0' );
+define( 'STORY_NAV_VERSION', '1.0.1' );
 
 function get_hex_to_rgb($color, $opacity = false) {
 		$default = 'rgb(0,0,0)';
