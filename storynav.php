@@ -15,6 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Story Navigation
  * Plugin URI:        https://folsomcreative.com/
+ * GitHub Plugin URI: https://github.com/FolsomCreative/storynav
  * Description:       This plugin enables a story navigation to be added to pages
  * Version:           1.0.0
  * Author:            Folsom Creative, Inc.
