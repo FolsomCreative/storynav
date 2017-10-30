@@ -1,0 +1,163 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.tocible {
+	z-index: 99;
+
+	position: fixed;
+	top: 50px;
+	right: 50px !important;
+	bottom: auto;
+	left:auto !important;
+
+	margin:0;
+
+	height:auto;
+  max-width: 200px;
+
+	color: #fff;
+	font-size:14px;
+
+}
+
+.tocible_header {
+	text-transform:uppercase;
+	cursor:pointer;
+	padding:5px 40px 5px 15px;
+	position:relative;
+	background:#333;
+}
+
+.tocible_header span {
+	position:absolute;
+	top:15px;
+	right:15px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #999;
+	font-size: 0;
+	line-height: 0;
+	transition-property: -moz-transform, -webkit-transform, -o-transform, -ms-transform;
+	transition-timing-function:linear;
+	transition-duration:0.4s;
+}
+
+.tocible_header span.toc_open {
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+}
+
+.tocible ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:;
+}
+
+.tocible li {
+	cursor:pointer;
+	white-space:nowrap;
+	display:block;
+	position: relative;
+	margin-bottom: 30px;
+}
+.tocible li:last-child {
+	margin-bottom: 0
+}
+.tocible li:not(:last-child) a::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: -22px;
+    width: 1px;
+    height: 110%;
+    background: #fff;
+}
+.tocible li a::after {
+	content: "";
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	right: -35px;
+	height: 27px;
+	width: 27px;
+	background-color: rgba(225,225,225, .3);
+	border: 1px solid white;
+	border-radius: 100%;
+}
+
+.tocible li.toc_scrolled a::after {
+	background: #122694;
+}
+
+.tocible li a {
+	color:inherit;
+	text-decoration:none;
+	display:block;
+	padding:5px 15px;
+	text-align:center;
+	word-wrap:break-word;
+	white-space:pre-wrap;
+	white-space: -moz-pre-wrap
+}
+
+.tocible li:hover {
+	background: #122694;
+}
+
+.tocible li.toc_scrolled {
+	background: #03a9f4;
+}
+
+.tocible .tocible_heading {
+	background: #03a9f4;
+}
+
+.tocible, .tocible .tocible_heading a {
+	width: 200px;
+}
+
+.tocible .tocible_subheading {
+	background: #03a9f4;
+}
+
+
+.tocible.hide .tocible_heading, .tocible.hide .tocible_heading a {
+	transition: all 0.5s ease;
+
+	background: transparent;
+	color: transparent;
+}
+
+
+@media all and (max-width: 600px) {
+	.tocible .tocible_heading {
+		background-color: transparent !important;
+	}
+	.tocible .tocible_heading a {
+		color: transparent !important;
+		display:block;
+		position:relative;
+		text-indent: -100%;
+		white-space: nowrap;
+	}
+	.tocible li:not(:last-child) a::before {
+		position:absolute;
+		right:13px;
+
+	}
+	.tocible .tocible_heading a:after {
+		position:absolute;
+		right: 0;
+	}
+	.tocible, .tocible .tocible_heading a {
+		width: 0px;
+	}
+}
