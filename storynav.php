@@ -17,7 +17,7 @@
  * Plugin URI:        https://folsomcreative.com/
  * GitHub Plugin URI: https://github.com/FolsomCreative/storynav
  * Description:       This plugin enables a story navigation to be added to pages
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Folsom Creative, Inc.
  * Author URI:        https://folsomcreative.com/
  * License:           GPL-2.0+
