@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              http://example.com
- * @since             1.0.1
+ * @since             1.2.1
  * @package           Story_Navigation
  *
  * @wordpress-plugin
@@ -17,7 +17,7 @@
  * Plugin URI:        https://folsomcreative.com/
  * GitHub Plugin URI: https://github.com/FolsomCreative/storynav
  * Description:       This plugin enables a story navigation to be added to pages
- * Version:           1.0.1
+ * Version:           1.2.1
  * Author:            Folsom Creative, Inc.
  * Author URI:        https://folsomcreative.com/
  * License:           GPL-2.0+
@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'STORY_NAV_VERSION', '1.0.1' );
+define( 'STORY_NAV_VERSION', '1.2.1' );
 
 function get_hex_to_rgb($color, $opacity = false) {
 		$default = 'rgb(0,0,0)';
