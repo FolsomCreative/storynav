@@ -124,6 +124,8 @@ class Story_Nav_Public {
 				echo ' .tocible li:hover { background: '.$storynav_hover.'; }';
 				echo '.tocible li.toc_scrolled { background: '.$storynav_label.'; transition: all 0.5s ease;}';
 				echo '.tocible li.toc_scrolled a::after { background: '.$storynav_active.';}';
+				echo '.toc_scrolled { background: '.$storynav_label.' !important; }';
+				echo '.toc_scrolled a { color: '.$storynav_text.' !important; }';
 				echo '</style>';
 
 				echo "<div class='tocible'>";
